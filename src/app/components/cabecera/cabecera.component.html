@@ -1,0 +1,91 @@
+<div class="card mat-card">
+    <div id="info-red">
+        <div id="argentinaPrograma">
+            <img src="./assets/argentina.jpg">
+        </div> 
+
+            <ul id="info-redes">
+                <li><a href="#">
+                    <img class ="redes" src="./assets/icons8-linkedin-64.png">
+                </a></li>
+                <li><a href="#">
+                    <img class ="redes" src="./assets/800px-Instagram-Icon.png">
+                </a></li>
+                <li><a href="#">
+                    <img class ="redes" src="./assets/icons8-twitter-64.png">
+                </a></li>
+                <li>
+                    
+                    <i class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#Modal" *ngIf="!loading">Ingresar</i>  
+                </li>
+                <li>
+                    <diV  *ngIf="loading" >
+                        <i class="btn btn-outline-secondary" (click)="logout()">Salir</i>  
+                    </diV>
+                    
+                </li>
+            </ul>
+        </div>  
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="btnEidt" *ngIf="loading" >
+                <i class="fa fa-pencil-square-o btn btn-outline-secondary" ></i> 
+            </div>
+    <div id="profile-background"><img src="https://i.pinimg.com/originals/e3/57/7c/e3577c0dbda0e1d853f4c7ac50aa2915.gif" class="card-img-top" alt="portada" height="350px"></div>  
+
+    <div class="card mat-card experiencia">
+        <app-perfil [loading]="loading"></app-perfil>
+    </div>
+    <div class="card mat-card experiencia">
+        <app-trabajos [loading]="loading"></app-trabajos>
+    </div>
+    <div class="card mat-card experiencia">
+        <app-estudios [loading]="loading" ></app-estudios>
+    </div>
+    <div class="card mat-card experiencia">
+        <app-sklills  [loading]="loading"></app-sklills>
+    </div>
+    <div class="card mat-card experiencia">
+        <app-proyectos [loading]="loading"></app-proyectos>
+    </div>
+    
+    
+   
+    
+        
+<!-- Modal -->
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form (ngSubmit)="login()" id="login">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" 
+                         [(ngModel)]="user.user" [ngModelOptions]="{standalone: true}"
+                         placeholder="Email" class="form-control required"/>
+        
+                    </div>
+                </div><br>
+        
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="password" 
+                         [(ngModel)]="user.pass" [ngModelOptions]="{standalone: true}"
+                         placeholder="Pass" class="form-control required"/>
+        
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input class="btn btn-success float-right" type="submit"  data-bs-dismiss="modal" aria-label="Close" value="Ingesar">
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  

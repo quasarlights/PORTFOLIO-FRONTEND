@@ -1,0 +1,158 @@
+*{
+  font-family: 'Be Vietnam Pro', sans-serif;
+font-family: 'Roboto Mono', monospace;
+color:dimgrey;
+
+}
+
+
+.mat-card{
+    border-radius: 10px;
+    margin: 5px 10px;
+    padding: 20px;
+    border-color: #ffffff;
+    background-color:darkblue;
+  }
+
+  .mat-card#first-card{
+    padding: 0;
+  }
+  
+  div#profile-background{
+    display:flex;
+    z-index: 1;
+ 
+  }
+  div#profile-background img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+
+  }
+  .profile-image{
+    position: sticky;
+    border-radius:50%;
+    width: 152px;
+    height: 152px;
+    margin-top: -110px;
+    z-index: 1;
+    margin-left: 10px;
+
+  }
+  div#info-actions {
+    display: flex;
+  }
+  div#info-actions button{
+    margin-right: 8px;
+  }
+  div#info-contact span{
+    font-size:1rem;
+    font-weight: 400;
+  }
+  div#info-contact span a{
+    color:#0a66c2;
+    touch-action: manipulation;
+    text-decoration: none;
+  }
+  div#info-titulo{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.25;
+  }
+  div#info-data{
+    display:flex;
+    justify-content: space-between;
+    margin-left:10px;
+  }
+  div#info-data h1{
+    font-size: 1.8rem;
+    display:inline;
+    font-weight: 500;
+    line-height: 1.25;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+  
+  ul.items-list {
+     list-style: none inside;
+  }
+  ul.items-list li{
+     display: flex;
+     margin: 10px 0;
+  }
+  ul.title-list li div.data-container {
+     flex-grow: 1;
+  }
+  
+  button.btn.btn-outline-primary {
+    margin: 15px;
+    /* margin-bottom: 10px; */
+  }
+  .btn.btn-primary-edit.me-md-2 {
+    background: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    padding: 0.1%;
+    position: static;
+    margin-left: 98%;
+    margin-top: -100px;
+  }
+  
+  div#info-red{
+    display:flex;
+    justify-content: space-between;
+    margin:0px;
+  }
+  div#info-red ul#info-redes{
+    width: 250px;
+    list-style: none;
+    flex-shrink: 0;
+  }
+  div#info-red ul#info-redes li a {
+    color: rgb(0, 0, 0);
+    display: flex;
+    text-decoration: none;
+    float: left; 
+  }   
+  div#info-red ul#info-redes li a img {
+    width:32px;
+    height:32px;
+    margin-right:8px;
+  }
+  button.btn.btn-outline-primary {
+    position: absolute;
+    margin-top: -1px;
+  }
+  div#info-red div#argentinaPrograma img{
+    width:242px;
+    height:92px;
+  }
+
+  .info-experiencia{
+    list-style: none;
+  
+  }
+  .titulo-exp-per {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 300px;
+    margin-top: -100px;
+  }
+  
+  .info-experiencia img {
+    width:120px;
+    height:100px;
+  }
+  
+  ul.exp-descripcion {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 330px;
+    margin-top: -10px;
+  }
+
+  .modal-body{
+    color: blue;
+  }
